@@ -8,13 +8,9 @@
         <title>BOXETE – Cloud | Ghost Kitchen in Suwanee</title>
         <link rel="icon" type="image/x-icon" href="../assets/img/favicon.png" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
-        <link href="http://boxete.com/css/styles.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="./css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
@@ -67,7 +63,7 @@
 					<div class="col-12 col-lg-7" style="box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);">
                        <form class="contact1-form validate-form" method="post" action="./contact/driver.php">
 							<div class="wrap-input1 width-form validate-input" data-validate = "Name is required">
-								<input class="input1" type="text" name="txtFirstName" id="txtFirstName" placeholder="First Name*">
+								<input class="input1" type="text" name="txtFirstName" id="txtFirstName" placeholder="First Name">
 							</div>
 						   	<div class="wrap-input1 width-form form-ml validate-input" data-validate = "Name is required">
 								<input class="input1" type="text" name="txtLastName" id="txtLastName" placeholder="Last Name*">
@@ -98,18 +94,19 @@
 							   </select>
 							</div>
 						   <div class="">
-								<span style="float: left;padding: 5px;">Do you currently deliver with other company?*</span>
+								<span style="float: left;padding: 5px; font-size: 14px;">Do you currently deliver with other company?*</span>
 							</div>
 						   <div class="wrap-input1 validate-input" style="">
 								<select class="input1 experience-select" placeholder="" style="" name="txtOtherCompany" id="txtOtherCompany">
-									<option class="input1" value="None">No</option>
+									<option class="input1 arrow down" value="None">No</option><i class=""></i>
 									<option class="input1" value="0-1 years">Uber Eats</option>
 									<option class="input1" value="2-3 years">Grubhub</option>
 									<option class="input1" value="4 or more years">Doordash</option>
 							   </select>
 							</div>
 						   <input type="checkbox" name="terms" value="terms">
-  							<label for="terms">I agree to receive texts and e-mails from Boxete in accordance with Boxete's communication terms and I have read and understand the Grubhub Privacy Policy. <a href="#">[See full terms]</a></label>
+  							<label for="terms" style="font-size: 10px;">I agree to receive texts and e-mails from Boxete in accordance with Boxete's communication terms and I have read and understand the Grubhub Privacy Policy. <a href="#">[See full terms]</a></label>
+						   <br/><br/>
 							<div class="container-contact1-form-btn">
 								<button class="contact1-form-btn">
 									<span>
