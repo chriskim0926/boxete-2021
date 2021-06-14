@@ -11286,13 +11286,12 @@ iframe {
 }
 
 input.input1 {
-  height: 50px;
+  height: 40px;
   border-radius: 0;
   padding: 0 30px;
   background: #ffffff;
     border: none;
     width: 100%;
-    height: 50px;
     padding-left: 20px;
     border-bottom: 1px solid #9999;
 }
@@ -11301,13 +11300,12 @@ input.input1 + .shadow-input1 {
 }
 
 textarea.input1 {
-  height: 50px;
   border-radius: 0;
   padding: 0 30px;
   background: #ffffff;
     border: none;
     width: 100%;
-    height: 100px;
+    height: 80px;
     padding-left: 20px;
     border-bottom: 1px solid #9999;
 }
@@ -11337,7 +11335,7 @@ textarea.input1 + .shadow-input1 {
   width: 100%;
   background: #e6e6e6;
   font-family: 'Raleway', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.5;
   color: #666666;
 }
@@ -11368,24 +11366,22 @@ textarea.input1 + .shadow-input1 {
 	margin-left: 15px;
 }
 .phone-select{
-	height: 50px;
+	height: 40px;
   border-radius: 0;
   padding: 0 30px;
   background: #ffffff;
     border: none;
     width: 100%;
-    height: 50px;
     padding-left: 20px;
     border-bottom: 1px solid #9999;
 }
 .experience-select{
-	height: 50px;
+	height: 40px;
   border-radius: 0;
   padding: 0 30px;
   background: #ffffff;
     border: none;
     width: 100%;
-    height: 50px;
     padding-left: 20px;
     border-bottom: 1px solid #9999;
 }
@@ -11433,24 +11429,22 @@ textarea.input1 + .shadow-input1 {
 	float: left;
 }
 .phone-select{
-	height: 50px;
+	height: 40px;
   border-radius: 0;
   padding: 0 30px;
   background: #ffffff;
     border: none;
     width: 100%;
-    height: 50px;
     padding-left: 20px;
     border-bottom: 1px solid #9999;
 	}
 .experience-select{
-	height: 50px;
+	height: 40px;
   border-radius: 0;
   padding: 0 30px;
   background: #ffffff;
     border: none;
     width: 100%;
-    height: 50px;
     padding-left: 20px;
     border-bottom: 1px solid #9999;
 }
