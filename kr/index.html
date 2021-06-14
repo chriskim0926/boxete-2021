@@ -14,7 +14,33 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="http://boxete.com/css/styles.css" rel="stylesheet" />
 		<link href="http://boxete.com/css/blink.css" rel="stylesheet" />
-	
+		<style>
+		.banner {
+				  /* this bit of markup is essential */
+				  position: relative;
+				  overflow: hidden;
+
+				  /* do this shit by yourself */
+				  background: rgba(0, 0, 0, .5) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');
+				  color: #fff;
+				  text-transform: uppercase;
+				  text-align: center;
+					padding: 250px 0;
+				  letter-spacing: 2px;
+				}
+
+				.banner__video {
+				  position: absolute;
+				  top: 50%;
+				  left: 50%;
+				  width: auto;
+				  min-width: 100%;
+				  height: auto;
+				  min-height: 100%;
+				  transform: translateX(-50%) translateY(-50%);
+				  z-index: -1;
+				}
+		</style>
     </head>
     <body id="page-top" style="font-family: 'Noto Sans KR', sans-serif;">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
@@ -40,27 +66,21 @@
                 </div>
             </div>
         </nav>
-       <header class="masthead" style="background-color: #333;">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-12">
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start">                       
-                              <img class="name" style=" -webkit-filter: drop-shadow(0px 0px 8px #f56d4b); filter: drop-shadow(0px 0px 8px #f56d4b); display: block; margin-left: auto; margin-right: auto;width: 100px;" src="http://boxete.com/assets\img\logo-white-1.png" alt="Boxete Logo" width="30%"/>
-							<main class="">
+       <div class="banner">
+			 <img class="name" style="line-height: 50px; -webkit-filter: drop-shadow(0px 0px 8px #f56d4b); filter: drop-shadow(0px 0px 8px #f56d4b); display: block; margin-left: auto; margin-right: auto;width: 100px;" src="http://boxete.com/assets\img\logo-white-1.png" alt="Boxete Logo" width="30%"/>
+							<main class="" style="line-height: 70px;">
 								  <div class="name"><span class="letter letter--0">B</span><span class="letter letter--1">O</span><span class="letter letter--2">X</span><span class="letter letter--3">E</span><span class="letter letter--4">T</span><span class="letter letter--5">E</span>
 								  </div>
-								<div class="name" style="font-size: 24px;"><span class="letter letter--0">K</span><span class="letter letter--1">I</span><span class="letter letter--2">T</span><span class="letter letter--3">C</span><span class="letter letter--4">H</span><span class="letter letter--5">E</span><span class="letter letter--5">N</span>
+								  <div class="name" style="font-size: 24px;"><span class="letter letter--0">K</span><span class="letter letter--1">I</span><span class="letter letter--2">T</span><span class="letter letter--3">C</span><span class="letter letter--4">H</span><span class="letter letter--5">E</span><span class="letter letter--5">N</span>
 								  </div>
-								<br/><br/>
-								  <div class="surname"><span class="letter letter--0">C</span><span class="letter letter--1">O</span><span class="letter letter--2">M</span><span class="letter letter--3">I</span><span class="letter letter--4">N</span><span class="letter letter--5">G</span><span class="letter letter--6"></span><span class="letter letter--6">S</span><span class="letter letter--7">O</span><span class="letter letter--8">O</span><span class="letter letter--8">N</span>
+								<br/>
+								  <div class="surname" style="line-height: 20px;"><span class="letter letter--0">C</span><span class="letter letter--1">O</span><span class="letter letter--2">M</span><span class="letter letter--3">I</span><span class="letter letter--4">N</span><span class="letter letter--5">G</span><span class="letter letter--6"></span><span class="letter letter--6">S</span><span class="letter letter--7">O</span><span class="letter letter--8">O</span><span class="letter letter--8">N</span>
 								  </div>
 							</main>
-							
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+			<video autoplay loop muted class="banner__video" poster="">
+			  <source src="../assets/video/boxete-kitchen.mp4" type="video/mp4">
+			</video>
+		  </div>
         <aside class="bg-gradient-primary-to-secondary">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
