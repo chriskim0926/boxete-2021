@@ -26,7 +26,7 @@ if($rs)
 {
 	
 
-	header("Location:http://boxete.com/careers.html"); 
+	header("Location:./careers.html"); 
 		echo '<script>alert("Thank you for part of Boxete!!")</script>';
 }
 }

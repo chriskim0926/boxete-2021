@@ -27,7 +27,7 @@ $rs = mysqli_query($con, $sql);
 if($rs)
 {
 
-	header("Location:http://boxete.com/partner.html"); 
+	header("Location:./partner.html"); 
 		echo '<script>alert("Thank you for part of Boxete!!")</script>';
 }
 }
