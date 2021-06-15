@@ -10848,10 +10848,6 @@ html {
   background: linear-gradient(45deg, #fff, #fff) !important;
 }
 
-.font-alt {
-  font-family: 'Raleway', sans-serif !important;
-}
-
 .text-gradient {
   background: -webkit-linear-gradient(#2937f0, #9f1ae2);
   background-clip: text;
