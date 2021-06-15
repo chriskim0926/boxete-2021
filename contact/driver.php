@@ -28,7 +28,7 @@ if($rs)
 	
 
 	header("Location:./driver.html"); 
-		echo '<script>alert("Thank you for part of Boxete!!")</script>';
+		echo '<script>alert("Thank you for part of BOXETE!!")</script>';
 }
 }
 else
