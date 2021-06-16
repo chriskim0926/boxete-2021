@@ -22,17 +22,7 @@ $sql = "INSERT INTO `tbl_career` (`id`, `fldFirstname`, `fldLastname`, `fldAddre
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
-if($rs)
-{
-	
 
-	header("Location:https://boxete.com/partner/careers.html"); 
-		echo '<script>alert("Thank you for part of BOXETE!!")</script>';
 }
-}
-else
-{
-	echo "Are you a genuine visitor?";
-	
-}
+
 ?>
