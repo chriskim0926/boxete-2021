@@ -27,7 +27,7 @@ if($rs)
 {
 	
 
-	header("Location:./driver.html"); 
+	header("Location:https://boxete.com/partner/driver.html"); 
 		echo '<script>alert("Thank you for part of BOXETE!!")</script>';
 }
 }
