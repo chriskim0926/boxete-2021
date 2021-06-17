@@ -33,7 +33,7 @@ if(isset($_POST['submit']))
     mail($to,$subject,$message,$headers);
 	session_start();
     $_SESSION['success_message'] = "Contact form saved successfully.";
-    header("Location: ../careers.html");
+    header("Location: ../careers.php");
     exit();
 }	
 
