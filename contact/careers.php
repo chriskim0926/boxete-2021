@@ -28,7 +28,7 @@ $rs = mysqli_query($con, $sql);
     $$txtFirstName = $_POST['txtFirstName'];
     $txtLastName = $_POST['txtLastName'];
     $subject = "BOXETE - Career form submission";
-    $message =  "\nFull Name: " . $txtFirstName . " " . $txtLastName . "\nEmail: " . $txtEmail . "\nAddress:" . $txtAddress . "\n " . $txtCity . " " . $txtState . " " . $txtZipcode . "\n\nWe got an career submission from www.boxetepartner.com" . "\n\n Please check the submission details" . $_POST['message'];
+    $message =  "Dear, BOXETE KITCHEN TEAM\nFull Name: " . $txtFirstName . " " . $txtLastName . "\nEmail: " . $txtEmail . "\nAddress:" . $txtAddress . "\n " . $txtCity . " " . $txtState . " " . $txtZipcode . "\n\nWe got a career submission from www.boxetepartner.com" . "\n\n Please check the submission details" . $_POST['message'];
 
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
