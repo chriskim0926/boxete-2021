@@ -33,7 +33,8 @@ $rs = mysqli_query($con, $sql);
     echo '<script type="text/javascript">';
 	echo ' alert("JavaScript Alert Box by PHP")';  //not showing an alert box.
 	echo '</script>';
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    header('Location: ./career.html');
+
     }	
 
 
