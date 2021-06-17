@@ -1,6 +1,6 @@
 <?php
 // database connection code
-if(isset($_POST['txtFirstName']))
+if(isset($_POST['Submit']))
 {
 
 $con = mysqli_connect('localhost', 'jcl3217', 'Dl433123!','db_main');
