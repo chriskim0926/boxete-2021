@@ -1,7 +1,5 @@
 <?php
 // database connection code
-if(isset($_POST['submit']))
-{
 	$con = mysqli_connect('localhost', 'jcl3217', 'Dl433123!','db_main');
 	// get the post records
 
@@ -21,7 +19,8 @@ if(isset($_POST['submit']))
 	// insert in database 
 	$rs = mysqli_query($con, $sql);
 
-	
+if(isset($_POST['submit']))
+{	
 	$to = "jae@newcricketwireless.com"; // this is your Email address
     $from = $_POST['txtEmail']; // this is the sender's Email address
     $$txtFirstName = $_POST['txtFirstName'];
@@ -30,9 +29,10 @@ if(isset($_POST['submit']))
     $message =  "Dear, BOXETE KITCHEN TEAM\n\nFull Name: " . $txtFirstName . " " . $txtLastName . "\nEmail: " . $txtEmail . "\nAddress:" . $txtAddress . "\n " . $txtCity . " " . $txtState . " " . $txtZipcode . "\n\nWe got a career submission from www.boxetepartner.com" . "\n\n Please check the submission details" . $_POST['message'];
 
     $headers = "From:" . $from;
-    mail($to,$subject,$message,$headers);
-		
-}	
+    if(mail($to,$subject,$message,$headers)){
+		http_response_code(200);
+		header("Location: ../careers.html");
+		} }
 
 
 ?>
