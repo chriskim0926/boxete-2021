@@ -30,10 +30,10 @@ $rs = mysqli_query($con, $sql);
 
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
-    echo '<script type="text/javascript">';
-	echo ' alert("JavaScript Alert Box by PHP")';  //not showing an alert box.
-	echo '</script>';
-    header('Location: ./career.html');
+	if($sql->execute()){
+    $_SESSION['message'] = "Your message here";
+    header('Location: ../careers.html');
+}
 
     }	
 
