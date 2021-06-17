@@ -1,6 +1,6 @@
 <?php
 // database connection code
-if(isset($_POST['txtFirstName']))
+if(isset($_POST['submit']))
 {
 
 $con = mysqli_connect('localhost', 'jcl3217', 'Dl433123!','db_main');
@@ -21,21 +21,20 @@ $sql = "INSERT INTO `tbl_career` (`id`, `fldFirstname`, `fldLastname`, `fldAddre
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
-	
-	  if ($_POST['submit']){
 	$to = "jae@newcricketwireless.com"; // this is your Email address
     $from = $_POST['txtEmail']; // this is the sender's Email address
     $$txtFirstName = $_POST['txtFirstName'];
     $txtLastName = $_POST['txtLastName'];
     $subject = "BOXETE - Career form submission";
-    $message =  "Dear, BOXETE KITCHEN TEAM\nFull Name: " . $txtFirstName . " " . $txtLastName . "\nEmail: " . $txtEmail . "\nAddress:" . $txtAddress . "\n " . $txtCity . " " . $txtState . " " . $txtZipcode . "\n\nWe got a career submission from www.boxetepartner.com" . "\n\n Please check the submission details" . $_POST['message'];
+    $message =  "Dear, BOXETE KITCHEN TEAM\n\nFull Name: " . $txtFirstName . " " . $txtLastName . "\nEmail: " . $txtEmail . "\nAddress:" . $txtAddress . "\n " . $txtCity . " " . $txtState . " " . $txtZipcode . "\n\nWe got a career submission from www.boxetepartner.com" . "\n\n Please check the submission details" . $_POST['message'];
 
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
-    echo "Mail Sent. Thank you " . $txtFirstName . ", we will contact you shortly.";
+    echo '<script type="text/javascript">';
+	echo ' alert("JavaScript Alert Box by PHP")';  //not showing an alert box.
+	echo '</script>';
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }	
 
-}
 
 ?>
