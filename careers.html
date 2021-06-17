@@ -42,13 +42,7 @@
 					<div class="col-12 col-lg-7 bg-white" style="box-shadow: 0 2px 8px 0 rgb(0 0 0 / 20%), 0 0px 0px 0 rgb(0 0 0 / 19%);">
 						<h4 class="mb-5 text-center">BOXETE is Hiring</h4>
 						
-						<?php if (isset($_SESSION['success_message']) && !empty($_SESSION['success_message'])) { ?>
-                        <div class="success-message" style="margin-bottom: 20px;font-size: 20px;color: green;"><?php echo $_SESSION['success_message']; ?></div>
-                        <?php
-                        unset($_SESSION['success_message']);
-                    }
-                    ?>
-						
+					
                        <form class="contact1-form validate-form" method="post" action="./contact/careers.php" >
 							<div class="wrap-input1 width-form validate-input" data-validate = "Name is required">
 								<input class="input1" type="text" name="txtFirstName" id="txtFirstName" placeholder="First Name*" required>
