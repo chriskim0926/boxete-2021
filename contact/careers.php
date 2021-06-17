@@ -1,6 +1,6 @@
 <?php
 // database connection code
-if(isset($_POST['Submit']))
+if(isset($_POST['txtFirstName']))
 {
 
 $con = mysqli_connect('localhost', 'jcl3217', 'Dl433123!','db_main');
@@ -21,7 +21,8 @@ $sql = "INSERT INTO `tbl_career` (`id`, `fldFirstname`, `fldLastname`, `fldAddre
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
-
+	
+	  if ($_POST['submit']){
 	$to = "jae@newcricketwireless.com"; // this is your Email address
     $from = $_POST['txtEmail']; // this is the sender's Email address
     $$txtFirstName = $_POST['txtFirstName'];
@@ -31,10 +32,10 @@ $rs = mysqli_query($con, $sql);
 
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    echo "Mail Sent. Thank you " . $txtFirstName . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     }	
 
-
+}
 
 ?>
