@@ -43,7 +43,7 @@
 						<h4 class="mb-5 text-center">BOXETE is Hiring</h4>
 						
 					
-                       <form class="contact1-form validate-form" method="post" action="./contact/careers.php" onSubmit="alert('Thank you for your submission.');" >
+                       <form class="contact1-form validate-form" method="post" action="./contact/careers.php" onSubmit="popFunction()" >
 							<div class="wrap-input1 width-form validate-input" data-validate = "Name is required">
 								<input class="input1" type="text" name="txtFirstName" id="txtFirstName" placeholder="First Name*" required>
 							</div>
@@ -94,7 +94,7 @@
 				<img class="mb-4" src="assets/img/logo-header.png" width="70px" alt="BOXETE Kitchen Logo">
                 <div class="text-black-50 small">
                     <div class="mb-2">BOXETE GROUP , LLC<br/>
-1300 Peachtree Industrial Blvd  Suwanee, GA 30024  <span class="mx-1">&middot;</span> info@boxete.com  <span class="mx-1">&middot;</span>  (678) 819-8858  <span class="mx-1">&middot;</span> www.boxete.com <span class="mx-1">&middot;</span> www.boxetepartner.com</div>
+1300 Peachtree Industrial Blvd  Suwanee, GA 30024  <span class="mx-1">&middot;</span> info@boxete.com  <span class="mx-1">&middot;</span>  (678) 819-8858  <span class="mx-1">&middot;</span> www.boxete.com <span class="mx-1">&middot;</span> <a href="http://www.boxetepartner.com">www.boxetepartner.com</a></div>
                     <a href="#!" style="color: #666;">Privacy</a>
                     <span class="mx-1">&middot;</span>
                     <a href="#!" style="color: #666;">Terms</a>
@@ -104,6 +104,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 		
         <script src="./js/scripts.js"></script>
-		
+		<script>
+		function myFunction() {
+		  alert("The form was submitted");
+		}
+		</script>
+
     </body>
 </html>
