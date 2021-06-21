@@ -78,7 +78,7 @@
   							<label for="terms" style="font-size: 10px;">I agree to receive texts and e-mails from BOXETE in accordance with BOXETE's communication terms and I have read and understand the BOXETE Privacy Policy. <a href="#">[See full terms]</a></label>
 						   <br/><br/>
 							<div class="container-contact1-form-btn">
-									<input class="contact1-form-btn" id="" name="submit" type="submit" value="Submit">
+									<input class="contact1-form-btn" id="myBtn" name="submit" type="submit" value="Submit">
 										<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 								 <div id="myModal" class="modal">
  									 <!-- Modal content -->
@@ -116,12 +116,11 @@
 		var modal = document.getElementById("myModal");
 		// Get the button that opens the modal
 		var btn = document.getElementById("myBtn");
-
 		// Get the <span> element that closes the modal
 		var span = document.getElementsByClassName("close")[0]; 
 		btn.onclick = function() {
 			modal.style.display = "block";
-			}
+		}
 		
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
