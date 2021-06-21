@@ -27,7 +27,8 @@ if(isset($_POST['submit']))
     $txtLastName = $_POST['txtLastName'];
     $subject = "BOXETE - Career form submission";
     $message =  "Dear, BOXETE KITCHEN TEAM\n\nFull Name: " . $txtFirstName . " " . $txtLastName . "\nEmail: " . $txtEmail . "\nAddress:" . $txtAddress . "\n " . $txtCity . " " . $txtState . " " . $txtZipcode . "\n\nWe got a career submission from www.boxetepartner.com" . "\n\n Please check the submission details" . $_POST['message'];
-
+	
+	sleep(3);
     $headers = "From:" . $from;
     if(mail($to,$subject,$message,$headers)){
 		http_response_code(200);
@@ -36,3 +37,4 @@ if(isset($_POST['submit']))
 
 
 ?>
+

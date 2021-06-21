@@ -1,8 +1,5 @@
 <?php
 // database connection code
-if(isset($_POST['txtFirstName']))
-{
-
 $con = mysqli_connect('localhost', 'jcl3217', 'Dl433123!','db_main');
 // get the post records
 
@@ -24,18 +21,20 @@ $sql = "INSERT INTO `tbl_partner` (`id`, `fldFirstname`, `fldLastname`, `fldComp
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
-if($rs)
-{
-
-	header("Location:https://boxete.com/partner/partner.html"); 
-		echo '<script>alert("Thank you for part of BOXETE!!")</script>';
-}
-}
-else
-{
-	echo "Are you a genuine visitor?";
+if(isset($_POST['submit']))
+{	
+	$to = "jae@newcricketwireless.com"; // this is your Email address
+    $from = $_POST['txtEmail']; // this is the sender's Email address
+    $$txtFirstName = $_POST['txtFirstName'];
+    $txtLastName = $_POST['txtLastName'];
+    $subject = "BOXETE - Driver form submission";
+    $message =  "Dear, BOXETE KITCHEN TEAM\n\nFull Name: " . $txtFirstName . " " . $txtLastName . "\nEmail: " . $txtEmail . "\nAddress:" . $txtAddress . "\n " . $txtCity . " " . $txtState . " " . $txtZipcode . "\nExperience: ". $txtExperience . "\nTell us about yourself: ". $txtMessage1 . "\nWhat kind of cusine do you specialize: ". $txtMessage2 . "\nDo you have specific dishes in mind: ". $txtMessage3 . "\nWhy do you think BOXETE kitchen fits your need?: ". $txtMessage4 . "\n\nWe got a career submission from www.boxetepartner.com" . "\n\n Please check the submission details" . $_POST['message'];
 	
-}
-
+	sleep(3);
+    $headers = "From:" . $from;
+    if(mail($to,$subject,$message,$headers)){
+		http_response_code(200);
+		header("Location: ../partner.html");
+		} }
 
 ?>
