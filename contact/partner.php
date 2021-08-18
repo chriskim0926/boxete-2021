@@ -28,7 +28,7 @@ if(isset($_POST['submit']))
     $$txtFirstName = $_POST['txtFirstName'];
     $txtLastName = $_POST['txtLastName'];
     $subject = "BOXETE - Partner form submission";
-    $message =  "Dear, BOXETE KITCHEN TEAM\n\nFull Name: " . $txtFirstName . " " . $txtLastName . "\nEmail: " . $txtEmail . "\nAddress:" . $txtAddress . "\n " . $txtCity . " " . $txtState . " " . $txtZipcode . "\nExperience: ". $txtExperience . "\nTell us about yourself: ". $txtMessage1 . "\nWhat kind of cusine do you specialize: ". $txtMessage2 . "\nDo you have specific dishes in mind: ". $txtMessage3 . "\nWhy do you think BOXETE kitchen fits your need?: ". $txtMessage4 . "\n\nWe got a career submission from www.boxetepartner.com" . "\n\n Please check the submission details" . $_POST['message'];
+    $message =  "Dear, BOXETE KITCHEN TEAM\n\nFull Name: " . $txtFirstName . " " . $txtLastName . "\nEmail: " . $txtEmail . "\nExperience: ". $txtExperience . "\nTell us about yourself: ". $txtMessage1 . "\nWhat kind of cusine do you specialize: ". $txtMessage2 . "\nDo you have specific dishes in mind: ". $txtMessage3 . "\nWhy do you think BOXETE kitchen fits your need?: ". $txtMessage4 . "\n\nWe got a career submission from www.boxetepartner.com" . "\n\n Please check the submission details" . $_POST['message'];
 	
 	sleep(3);
     $headers = "From:" . $from;
