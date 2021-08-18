@@ -23,7 +23,7 @@ $sql = "INSERT INTO `tbl_partner` (`id`, `fldFirstname`, `fldLastname`, `fldComp
 $rs = mysqli_query($con, $sql);
 if(isset($_POST['submit']))
 {	
-	$to = "jae@newcricketwireless.com"; // this is your Email address
+	$to = "admin@boxete.com"; // this is your Email address
     $from = $_POST['txtEmail']; // this is the sender's Email address
     $$txtFirstName = $_POST['txtFirstName'];
     $txtLastName = $_POST['txtLastName'];
