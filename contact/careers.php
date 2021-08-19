@@ -1,6 +1,6 @@
 <?php
 // database connection code
-	$con = mysqli_connect('localhost', 'jcl3217', 'Dl433123!','db_main');
+	$con = mysqli_connect('208.109.41.236', 'jcl3217', 'Dl433123!','db_main');
 	// get the post records
 
 	$txtFirstName = $_POST['txtFirstName'];
